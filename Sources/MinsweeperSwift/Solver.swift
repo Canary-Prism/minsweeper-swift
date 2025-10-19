@@ -48,8 +48,10 @@ func +=<T>(lhs: inout Set<T>, rhs: [T]) {
     lhs = lhs.union(rhs)
 }
 
-public struct MiaSolver: Solver {
+public struct MiaSolver: Solver, Sendable {
     public static let BRUTE_FORCE_LIMIT = 20;
+
+    public static let instance = MiaSolver()
     
     public func solve(state: GameState) -> Move? {
         let size = state.board.size;
