@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:minsweeper-swift}",
+            "name": "Debug Idk",
+            "program": "${workspaceFolder:minsweeper-swift}/.build/debug/Idk",
+            "preLaunchTask": "swift: Build Debug Idk"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:minsweeper-swift}",
+            "name": "Release Idk",
+            "program": "${workspaceFolder:minsweeper-swift}/.build/release/Idk",
+            "preLaunchTask": "swift: Build Release Idk"
+        }
+    ]
+}
