@@ -57,9 +57,9 @@ public enum ConventionalSize {
 }
 
 public struct BoardSize {
-    let width: Int
-    let height: Int
-    let mines: Int
+    public let width: Int
+    public let height: Int
+    public let mines: Int
 
     public init(width: Int, height: Int, mines: Int) throws(BoardSizeError) {
         if (width <= 0 || height <= 0) {
