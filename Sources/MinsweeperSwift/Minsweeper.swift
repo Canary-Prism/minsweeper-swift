@@ -3,7 +3,7 @@ public protocol Minsweeper {
 
     func start() -> GameState
 
-    func  getGameState() -> GameState 
+    func getGameState() -> GameState 
 
     func reveal(x: Int, y: Int) -> GameState
 
