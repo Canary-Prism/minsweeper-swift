@@ -58,7 +58,7 @@ public struct MiaSolver: Solver, Sendable {
 
         if (state.status == .playing) {
             for y2 in 0..<size.height {
-                for x2 in 0...size.width {
+                for x2 in 0..<size.width {
 
                     guard case .safe(let number) = state.board[x2, y2].type else { continue }
                     
@@ -194,7 +194,7 @@ public struct MiaSolver: Solver, Sendable {
             }
             
             for y2 in 0..<size.height {
-                for x2 in 0...size.width {
+                for x2 in 0..<size.width {
                     guard case .safe(number: let this_num) = state.board[x2, y2].type, this_num > 0 else { continue }
                     
                     var flagged = 0;
@@ -235,7 +235,7 @@ public struct MiaSolver: Solver, Sendable {
         
         if (state.remainingMines == 0) {
             for y2 in 0..<size.height {
-                for x2 in 0...size.width {
+                for x2 in 0..<size.width {
                     if (state.board[x2, y2].state == .unknown) {
                         return .init(point: .init(x: x2, y: y2), action: .left)
                     }
