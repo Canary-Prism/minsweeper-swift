@@ -49,9 +49,9 @@ public extension Minsweeper {
 }
 
 public struct GameState {
-    var status: GameStatus
-    var board: Board
-    var remainingMines: Int
+    public var status: GameStatus
+    public var board: Board
+    public var remainingMines: Int
 
     func hideMines() -> GameState {
         var copy = self

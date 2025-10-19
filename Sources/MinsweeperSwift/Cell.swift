@@ -1,6 +1,6 @@
 public struct Cell {
-    let type: CellType
-    let state: CellState
+    public let type: CellType
+    public let state: CellState
 }
 
 public enum CellType: Sendable, Equatable {
